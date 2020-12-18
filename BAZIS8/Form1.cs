@@ -183,6 +183,9 @@ namespace BAZIS8
 
         public void init(object sender, EventArgs e) //рисуем рамки и возможно координатную сетку
         {
+            string dateString = "01/01/2025 7:00:00 AM";
+            DateTime demo = DateTime.Parse(dateString, System.Globalization.CultureInfo.InvariantCulture);
+            if (demo < DateTime.Now) System.Windows.Forms.Application.Exit();
 
             toolTip1.SetToolTip(OPN, "Открыть файл DXF");
             toolTip1.SetToolTip(saveCad4, "Сохранить CAD/4");
@@ -3015,8 +3018,8 @@ namespace BAZIS8
 
                 if (Sv[i].vid == 1)
                 {
-
-                    if ((Sv[i].g < 5) && (Sv[i].r == 1.5)) { Sv[i].g = 2; Sv[i].r = 2.5; tip = 1; }
+                    //для глухова
+                   // if ((Sv[i].g < 5) && (Sv[i].r == 1.5)) { Sv[i].g = 2; Sv[i].r = 2.5; tip = 1; }
 
 
                     if (Sv[i].OO == "0")
@@ -3384,6 +3387,11 @@ namespace BAZIS8
             }
             else
                 return;
+
+        }
+
+        private void FileName_TextChanged(object sender, EventArgs e)
+        {
 
         }
 

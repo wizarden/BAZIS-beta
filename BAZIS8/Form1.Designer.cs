@@ -413,13 +413,13 @@
             // 
             // saveWW
             // 
-            this.saveWW.BackColor = System.Drawing.Color.OrangeRed;
+            this.saveWW.BackColor = System.Drawing.Color.Tomato;
             this.saveWW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveWW.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.saveWW.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.saveWW.Location = new System.Drawing.Point(340, 4);
+            this.saveWW.Font = new System.Drawing.Font("Arial Unicode MS", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveWW.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.saveWW.Location = new System.Drawing.Point(519, 4);
             this.saveWW.Name = "saveWW";
-            this.saveWW.Size = new System.Drawing.Size(100, 30);
+            this.saveWW.Size = new System.Drawing.Size(100, 31);
             this.saveWW.TabIndex = 27;
             this.saveWW.Text = "Save WW";
             this.saveWW.UseVisualStyleBackColor = false;
@@ -431,11 +431,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FileName.BackColor = System.Drawing.Color.PowderBlue;
             this.FileName.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FileName.Location = new System.Drawing.Point(559, 4);
+            this.FileName.Location = new System.Drawing.Point(625, 6);
             this.FileName.Name = "FileName";
-            this.FileName.Size = new System.Drawing.Size(338, 29);
+            this.FileName.Size = new System.Drawing.Size(291, 29);
             this.FileName.TabIndex = 28;
             this.FileName.Tag = "";
+            this.FileName.TextChanged += new System.EventHandler(this.FileName_TextChanged);
             this.FileName.Enter += new System.EventHandler(this.FileName_Enter);
             // 
             // labelD3
@@ -572,13 +573,13 @@
             // 
             // saveCad4
             // 
-            this.saveCad4.BackColor = System.Drawing.Color.OrangeRed;
+            this.saveCad4.BackColor = System.Drawing.Color.Tomato;
             this.saveCad4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveCad4.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.saveCad4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.saveCad4.Location = new System.Drawing.Point(445, 4);
+            this.saveCad4.Font = new System.Drawing.Font("Arial Unicode MS", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveCad4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.saveCad4.Location = new System.Drawing.Point(416, 4);
             this.saveCad4.Name = "saveCad4";
-            this.saveCad4.Size = new System.Drawing.Size(100, 30);
+            this.saveCad4.Size = new System.Drawing.Size(100, 31);
             this.saveCad4.TabIndex = 41;
             this.saveCad4.Text = "Save CAD/4";
             this.saveCad4.UseVisualStyleBackColor = false;
@@ -716,13 +717,14 @@
             // 
             this.OPN.BackColor = System.Drawing.SystemColors.Highlight;
             this.OPN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OPN.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OPN.Location = new System.Drawing.Point(4, 4);
+            this.OPN.Font = new System.Drawing.Font("Arial Unicode MS", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OPN.Location = new System.Drawing.Point(12, 171);
             this.OPN.Name = "OPN";
-            this.OPN.Size = new System.Drawing.Size(100, 30);
+            this.OPN.Size = new System.Drawing.Size(80, 20);
             this.OPN.TabIndex = 50;
             this.OPN.Text = "Open DXF";
             this.OPN.UseVisualStyleBackColor = false;
+            this.OPN.Visible = false;
             this.OPN.Click += new System.EventHandler(this.OPN_Click);
             // 
             // SKV
@@ -743,10 +745,10 @@
             // 
             this.OWW.BackColor = System.Drawing.Color.LimeGreen;
             this.OWW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OWW.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OWW.Location = new System.Drawing.Point(110, 4);
+            this.OWW.Font = new System.Drawing.Font("Arial Unicode MS", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OWW.Location = new System.Drawing.Point(4, 4);
             this.OWW.Name = "OWW";
-            this.OWW.Size = new System.Drawing.Size(100, 30);
+            this.OWW.Size = new System.Drawing.Size(100, 31);
             this.OWW.TabIndex = 53;
             this.OWW.Text = "OPEN WW4";
             this.OWW.UseVisualStyleBackColor = false;
@@ -797,10 +799,10 @@
             // 
             this.OPNCAD4.BackColor = System.Drawing.Color.LimeGreen;
             this.OPNCAD4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OPNCAD4.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OPNCAD4.Location = new System.Drawing.Point(216, 4);
+            this.OPNCAD4.Font = new System.Drawing.Font("Arial Unicode MS", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OPNCAD4.Location = new System.Drawing.Point(107, 4);
             this.OPNCAD4.Name = "OPNCAD4";
-            this.OPNCAD4.Size = new System.Drawing.Size(120, 30);
+            this.OPNCAD4.Size = new System.Drawing.Size(100, 31);
             this.OPNCAD4.TabIndex = 57;
             this.OPNCAD4.Text = "OPEN Cad/4";
             this.OPNCAD4.UseVisualStyleBackColor = false;
@@ -885,32 +887,30 @@
             // 
             // saveBPP
             // 
-            this.saveBPP.BackColor = System.Drawing.Color.OrangeRed;
+            this.saveBPP.BackColor = System.Drawing.Color.Tomato;
             this.saveBPP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveBPP.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.saveBPP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.saveBPP.Location = new System.Drawing.Point(421, 462);
+            this.saveBPP.Font = new System.Drawing.Font("Arial Unicode MS", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveBPP.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.saveBPP.Location = new System.Drawing.Point(210, 4);
             this.saveBPP.Name = "saveBPP";
-            this.saveBPP.Size = new System.Drawing.Size(150, 35);
+            this.saveBPP.Size = new System.Drawing.Size(100, 31);
             this.saveBPP.TabIndex = 65;
             this.saveBPP.Text = "Save BPP";
             this.saveBPP.UseVisualStyleBackColor = false;
-            this.saveBPP.Visible = false;
             this.saveBPP.Click += new System.EventHandler(this.saveBPP_Click);
             // 
             // SaveBPPall
             // 
-            this.SaveBPPall.BackColor = System.Drawing.Color.OrangeRed;
+            this.SaveBPPall.BackColor = System.Drawing.Color.Tomato;
             this.SaveBPPall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveBPPall.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveBPPall.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.SaveBPPall.Location = new System.Drawing.Point(233, 462);
+            this.SaveBPPall.Font = new System.Drawing.Font("Arial Unicode MS", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveBPPall.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.SaveBPPall.Location = new System.Drawing.Point(313, 4);
             this.SaveBPPall.Name = "SaveBPPall";
-            this.SaveBPPall.Size = new System.Drawing.Size(150, 35);
+            this.SaveBPPall.Size = new System.Drawing.Size(100, 31);
             this.SaveBPPall.TabIndex = 66;
             this.SaveBPPall.Text = "Save BPP All";
             this.SaveBPPall.UseVisualStyleBackColor = false;
-            this.SaveBPPall.Visible = false;
             this.SaveBPPall.Click += new System.EventHandler(this.SaveBPPall_Click);
             // 
             // Form1
